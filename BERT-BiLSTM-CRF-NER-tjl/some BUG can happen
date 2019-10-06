@@ -1,0 +1,4 @@
+c_api.TF_GetCode(self.status.status))
+tensorflow.python.framework.errors_impl.NotFoundError: FindFirstFile failed for: D:/localE/code/daguang_extract/BERT-BiLSTM-CRF-NER-master/output443000_2/eval : ϵͳ\udcd5Ҳ\udcbb\udcb5\udcbdָ\udcb6\udca8\udcb5\udcc4·\udcbe\udcb6\udca1\udca3
+
+原因：D:/localE/code/daguang_extract/BERT-BiLSTM-CRF-NER-master/output443000_2/eval 没有这个目录
