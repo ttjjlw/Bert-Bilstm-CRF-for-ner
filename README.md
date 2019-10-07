@@ -1,6 +1,5 @@
 # Bert-Bilstm-CRF-for-ner
-重要：把TJL_function.py文件放入D:\Python_\Lib\site-packages（这是我的python安装的目录下的site_packages路径）下
-===========
+`重要：把TJL_function.py文件放入D:\Python_\Lib\site-packages（这是我的python安装的目录下的site_packages路径）下`
 ## 一、准备bert模型
 >> 2019达观信息抽取比赛，采用的是脱敏的文档，因此需要预训练bert模型（而无法采用google预训练的bert 模型）<br> 
 我预训练bert模型：链接：https://pan.baidu.com/s/1N627LqHnyKPSMbeBuONUfQ 提取码：jfle <br> 
@@ -50,8 +49,11 @@ INFO:tensorflow:global_step/sec: 0.612548
 INFO:tensorflow:loss = 43.69185, step = 100 (163.253 sec)
 INFO:tensorflow:global_step/sec: 0.639746
 ```
-## 模型运行过程解释
-模型训练过程时会输出loss,每隔save_checkpoints_steps 会输出验证集结果 acc(准确率)，f1(以O为负，其他tags为正计算的)  <br>
+## 四、模型运行过程解释
+>> 模型训练过程时会输出loss,每隔save_checkpoints_steps 会输出验证集结果 acc(准确率)，f1(以O为负，其他tags为正计算的)  <br>
 max_steps_without_decrease（increase） f1没上升模型训练会早停 <br>
 模型每隔save_checkpoints_steps时会自动保存，重新训练时，会自动检查是否有训练好的模型，有的话会载入接着训练 <br>
 学习率会随steps增加而减少。 <br>
+最终训练结果：f1：92~94
+线上提交得分：91.9
+
