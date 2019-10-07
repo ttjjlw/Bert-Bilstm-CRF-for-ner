@@ -28,8 +28,8 @@ def train_ner():
     import os
     from bert_base.train.train_helper import get_args_parser
     from bert_base.train.bert_lstm_ner import train
-    bert_path = r'D:\localE\code\daguang_extract\BERT-BiLSTM-CRF-NER-master\chinese_L-12_H-768_A-12\MSRA'
-    root_path = r'D:\localE\code\daguang_extract\BERT-BiLSTM-CRF-NER-master'
+    bert_path = r'D:\localE\code\daguang_extract\BERT-BiLSTM-CRF-NER-tjl\chinese_L-12_H-768_A-12\MSRA'
+    root_path = r'D:\localE\code\daguang_extract\BERT-BiLSTM-CRF-NER-tjl'
     args = get_args_parser()
     args.clean = True
     args.max_seq_length=128
