@@ -54,6 +54,8 @@ INFO:tensorflow:global_step/sec: 0.639746
 max_steps_without_decrease（increase） f1没上升模型训练会早停 <br>
 模型每隔save_checkpoints_steps时会自动保存，重新训练时，会自动检查是否有训练好的模型，有的话会载入接着训练 <br>
 学习率会随steps增加而减少。 <br>
-最终训练结果：f1：92~94
-线上提交得分：91.9
+最终训练结果：f1：92~94 <br>
+线上提交得分：91.9 <br>
+## 五、联系方式
+>> wechat: tu1982226215  欢迎来交流沟通
 
