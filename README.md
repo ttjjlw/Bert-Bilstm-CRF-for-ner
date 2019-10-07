@@ -15,7 +15,7 @@ BERT-BiLSTM-CRF-NER-tjl\chinese_L-12_H-768_A-12\BERT
 `clone 本项目 后其实可以跳过准备数据过程，因为数据也已上传。直接可进入第三步，设置相关超参数即可跑通。`
 
 ## 二、准备数据
->> 把17000条样本其中15000条做train_raw.txt,2000条做 test_raw.txt(上传的dev.txt和test.txt是相同文件)
+>> 把17000条样本其中15000条做train_raw.txt,2000条做 test_raw.txt(上传的dev.txt和test.txt其实是相同文件) <br>
 BERT-BiLSTM-CRF-NER-tjl\dg_NERdata 在该目录下放入以下数据（文件名称保持一致，不能任意起名）：<br> 
 train.txt  内容为BIO格式，用作训练集 <br> 
 train_raw.txt  因为要输入固定长度的句子，我为了保证句子长度不大于128（128是超参数）我进行的操作是：假如原本句子长度为160，那么依次取前128  个词，再判断129词的tags是否是非O的tags,如果是继续取，再判断第130的词，如果第130个词的tags是O，则原本160的长度分成了129和41两                  个长度的句子（这个功能的实现见TJl_function.py中的reduce_sentence_length函数）。因此，train_raw.txt是未缩减前的，train.txt是                  由train_raw.txt变化来得。<br> 
