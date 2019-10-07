@@ -1,8 +1,8 @@
 # Bert-Bilstm-CRF-for-ner
 ## 一、准备bert模型
-    2019达观信息抽取比赛，采用的是脱敏的文档，因此需要预训练bert模型（而无法采用google预训练的bert 模型）<br> 
+>>> 2019达观信息抽取比赛，采用的是脱敏的文档，因此需要预训练bert模型（而无法采用google预训练的bert 模型）<br> 
 我预训练bert模型：链接：https://pan.baidu.com/s/1N627LqHnyKPSMbeBuONUfQ 提取码：jfle <br> 
-    注意：我的预训练bert模型是only mask LM而没训练上下句（但是实验证明，效果都差不多），only mask LM 最后的准确率在86%左右 <br> 
+>>> 注意：我的预训练bert模型是only mask LM而没训练上下句（但是实验证明，效果都差不多），only mask LM 最后的准确率在86%左右 <br> 
 把预训练的bert模型、vocab.txt和bert_config.json在该目录下：BERT-BiLSTM-CRF-NER-tjl\chinese_L-12_H-768_A-12\DaGuan <br> 
 
 ## 二、准备数据
