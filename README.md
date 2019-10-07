@@ -1,6 +1,8 @@
 # Bert-Bilstm-CRF-for-ner
-`重要：把TJL_function.py文件放入D:\Python_\Lib\site-packages（这是我的python安装的目录下的site_packages路径）下 <br>
-Environment Requirment:tensorflow 1.10.0 <br>
+`重要：把TJL_function.py文件放入D:\Python_\Lib\site-packages（这是我的python安装的目录下的site_packages路径）下
+
+Environment Requirment:tensorflow 1.10.0 
+
                         python3
 `
 ## 一、准备bert模型
