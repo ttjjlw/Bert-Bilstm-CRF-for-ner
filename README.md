@@ -21,6 +21,7 @@ train_raw.txt  因为要输入固定长度的句子，我为了保证句子长�
 test.txt  内容格式同train.txt 但也可不含标签。用于生成预测结果 <br>
 test_raw.txt 同 train_raw含义 <br>
 dev.txt 在train过程输出验证结果的信息 <br>
+train_v_8.txt 可不用管，放在这里不动即可，其实就是Daguan给的最原始的样本，用于计算test生成的文件的f1score <br>
 
 ### 如果不是针对DaGuan数据集 切换目录即可：如把相应数据放置该目录下：
 D:\localE\code\daguang_extract\BERT-BiLSTM-CRF-NER-tjl\NERdata  <br>
@@ -28,7 +29,7 @@ train.txt 训练集 内容为BIO格式  <br>
 test.txt 预测集 同上（可不含标签）  <br>
 dev.txt 验证集  同上  <br>
 打开BERT-BiLSTM-CRF-NER-tjl\bert_base\train\bert_lstm_ner.py文件 ctrl+f 搜索（如果不是针对daGuan比赛这段以下这段可以注释）注释指定内容，这样就不需要准备train_raw及test_raw.txt文件  <br>
-train_v_8.txt 可不用管，放在这里不动即可，其实就是Daguan给的最原始的样本，用于计算test生成的文件的f1score <br>
+
 
 ## 三、运行模型
 >> 1、准备模型（按以上介绍放入指定位置）  <br>
