@@ -1,5 +1,8 @@
 # Bert-Bilstm-CRF-for-ner
-`重要：把TJL_function.py文件放入D:\Python_\Lib\site-packages（这是我的python安装的目录下的site_packages路径）下`
+`重要：把TJL_function.py文件放入D:\Python_\Lib\site-packages（这是我的python安装的目录下的site_packages路径）下 <br>
+Environment Requirment:tensorflow 1.10.0 <br>
+                        python3
+`
 ## 一、准备bert模型
 >> 2019达观信息抽取比赛，采用的是脱敏的文档，因此需要预训练bert模型（而无法采用google预训练的bert 模型）<br> 
 我预训练bert模型：链接：https://pan.baidu.com/s/1N627LqHnyKPSMbeBuONUfQ 提取码：jfle <br> 
