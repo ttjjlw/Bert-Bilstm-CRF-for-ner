@@ -1,4 +1,6 @@
 # Bert-Bilstm-CRF-for-ner
+重要：把TJL_function.py文件放入D:\Python_\Lib\site-packages（这是我的python安装的目录下的site_packages路径）下
+===========
 ## 一、准备bert模型
 >> 2019达观信息抽取比赛，采用的是脱敏的文档，因此需要预训练bert模型（而无法采用google预训练的bert 模型）<br> 
 我预训练bert模型：链接：https://pan.baidu.com/s/1N627LqHnyKPSMbeBuONUfQ 提取码：jfle <br> 
@@ -8,9 +10,7 @@
 ### 如果不是针对DaGuan数据集 切换目录即可：如 把预训练的bert模型、vocab.txt和bert_config.json在该目录下：<br>
 BERT-BiLSTM-CRF-NER-tjl\chinese_L-12_H-768_A-12\BERT
 
-===========================================================================
-clone 本项目 后其实可以跳过准备数据过程，因为数据也已上传。直接可进入第三步，设置相关超参数即可跑通。
-===========================================================================
+`clone 本项目 后其实可以跳过准备数据过程，因为数据也已上传。直接可进入第三步，设置相关超参数即可跑通。`
 
 ## 二、准备数据
 >> BERT-BiLSTM-CRF-NER-tjl\dg_NERdata 在该目录下放入以下数据（文件名称保持一致，不能任意起名）：<br> 
@@ -42,6 +42,14 @@ def get_args_parser():
 ```
 4、运行BERT-BiLSTM-CRF-NER-tjl\run.py文件  <br>
 5、输出结果如下：  <br>
+```
+INFO:tensorflow:Saving checkpoints for 0 into D:\localE\code\daguang_extract\BERT-BiLSTM-CRF-NER-tjl\output\model.ckpt.
+INFO:tensorflow:loss = 194.51651, step = 0
+INFO:tensorflow:global_steps = 0, loss = 194.51651
+INFO:tensorflow:global_step/sec: 0.612548
+INFO:tensorflow:loss = 43.69185, step = 100 (163.253 sec)
+INFO:tensorflow:global_step/sec: 0.639746
+```
 ## 模型运行过程解释
 模型训练过程时会输出loss,每隔save_checkpoints_steps 会输出验证集结果 acc(准确率)，f1(以O为负，其他tags为正计算的)  <br>
 max_steps_without_decrease（increase） f1没上升模型训练会早停 <br>
