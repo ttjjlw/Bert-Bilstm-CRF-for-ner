@@ -29,7 +29,7 @@ D:\localE\code\daguang_extract\BERT-BiLSTM-CRF-NER-tjl\NERdata  <br>
 train.txt 训练集 内容为BIO格式  <br>
 test.txt 预测集 同上（可不含标签）  <br>
 dev.txt 验证集  同上  <br>
-打开BERT-BiLSTM-CRF-NER-tjl\bert_base\train\bert_lstm_ner.py文件 ctrl+f 搜索（如果不是针对daGuan比赛这段以下这段可以注释）注释指定内容，这样就不需要准备train_raw及test_raw.txt文件  <br>
+打开BERT-BiLSTM-CRF-NER-tjl\bert_base\train\bert_lstm_ner.py文件 ctrl+f 搜索'针对daGuan比赛'（如果不是针对daGuan比赛这段以下这段可以注释）注释指定内容，这样就不需要准备train_raw及test_raw.txt文件  <br>
 
 
 ## 三、运行模型
