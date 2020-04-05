@@ -440,8 +440,6 @@ def iobes_iob(tags):
             new_tags.append(tag.replace('S-', 'B-'))
         elif tag.split('-')[0] == 'E':
             new_tags.append(tag.replace('E-', 'I-'))
-        elif tag.split('-')[0] == 'O':
-            new_tags.append(tag)
         else:
-            raise Exception('Invalid format!')
+            new_tags.append(tag)
     return new_tags
