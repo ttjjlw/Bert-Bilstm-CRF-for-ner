@@ -102,6 +102,12 @@ class NerProcessor(DataProcessor):
     def get_labels(self, labels=None):
         if labels is not None:
             self.labels = labels
+            #针对训练集的中的label会经过iob2iobes转化
+            for label in labels:
+                if label.split('-')[0]=='B':
+                    self.labels.append('E'+'-'+label.split('-')[1])
+                elif label.split('-')[0]=='I':
+                    self.labels.append('S'+'-'+label.split('-')[1])
             self.labels.extend(["X", "[CLS]", "[SEP]"])
         else:
             self.labels = ['B-a', 'I-a', "B-b", "I-b", "B-c", "I-c", "O","X", "[CLS]", "[SEP]"]
